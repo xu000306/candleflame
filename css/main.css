@@ -1,0 +1,83 @@
+.cls-1 {
+  fill: #7f3f98;
+}
+
+.cls-2 {
+  fill: url(#radial-gradient-2);
+
+  animation: resize2 6s infinite;
+  transform-origin: center center;
+}
+
+.cls-3 {
+  fill: url(#radial-gradient);
+
+  animation: moveHorizontally 6s infinite;
+
+  transform-origin: center center;
+}
+.flame {
+  width: 74px;
+  height: 274px;
+
+  animation: resize 6s infinite;
+}
+
+@keyframes resize {
+  0% {
+    transform: translate(351.67px, 181.02px) scaleX(1) scaleY(1);
+  }
+
+  50% {
+    transform: translate(351.67px, 181.02px) scaleX(1.2) scaleY(0.8)
+      rotate(4deg);
+    transform-origin: 0% 33%;
+  }
+
+  100% {
+    transform: translate(351.67px, 181.02px) scaleX(1) scaleY(1);
+  }
+}
+
+@keyframes resize2 {
+  0% {
+    transform: scaleX(1) scaleY(1); /* 初始大小 */
+  }
+  50% {
+    transform: translateY(30px) scaleY(0.5);
+  }
+  100% {
+    transform: scaleY(1); /* 恢复到初始大小 */
+  }
+}
+
+@keyframes moveHorizontally {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(20px) translateY(50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes enlarge {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.05);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  75% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
